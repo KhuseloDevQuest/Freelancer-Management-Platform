@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    
+
+    <link rel="stylesheet" href="Landing.css">
+ <!-- Linking my stylesheet to this page -->
+</head>
+
+<body>
+    
+    <header class ="h1"> Hustlr.</header>
+
+
+    <div id="dashboard-toggle">☰</div>
+    <div id="sidebar">
+    <button>Sign In</button>   <!-- Hello so im just dividing the buttons accordingly -->
+    <button>Sign Up</button>
+    <button onclick="location.href='#'">Home</button>
+    <button onclick="location.href='#about'">About</button>
+   
+  </div>
+        
+
+
+  <div class="image-slider">
+    <div class="slide-track">
+      <img src="HeroJPG.jpg" alt="Image 1">
+      <img src="HeroJPG2.jpg" alt="Image 2">
+      <img src="HeroJPG3.jpg" alt="Image 3">
+      <img src="HeroJPG4.jpg" alt="Image 4">
+      <img src="HeroJPG.jpg" alt="Image 1">
+      <img src="HeroJPG2.jpg" alt="Image 2">
+      <img src="HeroJPG3.jpg" alt="Image 3">
+      <img src="HeroJPG4.jpg" alt="Image 4">
+    </div>
+    <div class="text-overlay">
+      <h2>Empowering Freelancers & Clients</h2>
+      <p>Seamlessly manage contracts, payments &Projects</p>
+
+      <div class="search-box">
+        <input type="text" placeholder="Search for any service...">
+        <button class="search-icon">
+          🔍
+        </button>
+      </div>
+
+      <div class="cta-buttons">
+        <button class="cta">Find work</button>
+        <button class="cta">Hire talent</button>
+      </div>
+      <div class="trusted-by">
+        <span>Trusted by:</span>
+        <img src="me" alt="Meta">
+        <img src="google-logo.png" alt="Google">
+        <img src="netflix-logo.jp" alt="Netflix">
+        <img src="pg-logo.png" alt="P&G">
+        <img src="paypal-logo.png" alt="PayPal">
+        <img src="payoneer-logo.png" alt="Payoneer">
+      </div>
+
+    </div>
+    
+  </div>
+  
+
+
+   <script>
+    const toggle = document.getElementById('dashboard-toggle');
+    //This finds the element in your HTML with the ID dashboard-toggle (the ☰ button)
+    //We store it in a variable called toggle so we can use it later
+
+
+    const sidebar = document.getElementById('sidebar');
+    //This finds the element with the ID sidebar (the hidden menu with 4 buttons)
+    //Stored in a variable called sidebar
+
+
+    toggle.onclick = () => {
+      //This says: “When the user clicks on the toggle (☰), do something”
+      // the something is..
+      sidebar.classList.toggle('show');
+      //If the sidebar doesn’t have the class show, add it
+      // This is what makes the sidebar appear and disappear (because .show is used in CSS to control visibility).
+    };
+  </script>
+
+<section class="categories">
+    <h2>Explore Categories</h2>
+    <div class="category-grid">
+      <div class="category-card">
+        <img src="jobJPG.jpg" alt="Job Icon">
+        <p>Post and Apply for Jobs</p>
+      </div>
+      <div class="category-card">
+        <img src="taskJp.jpg" alt="Tasks Icon">
+        <p>Manage Tasks & Milestones</p>
+      </div>
+      <div class="category-card">
+        <img src="payment.jpg" alt="Payment Icon">
+        <p>Secure Milestone-Based Payment</p>
+      </div>
+    </div>
+  </section>
+  
+
+
+    <footer id="about">
+        <header>About</header>
+        <p>We connect talented freelancers with clients worldwide — from design to development, video editing to marketing. Whether you're here to hire or get hired, we make it simple, secure, and professional.</p>
+        <p>Your go-to platform for hiring top freelancers and finding quality gigs — fast, easy, and secure.</p>
+
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Welcome Client</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <button class="menu" onclick="toggleMenu()">&#9776;</button>
+      <ul id="menuList">
+        
+        <li><button>Settings</button></li>
+        <li><button>Reports</button></li>
+        <li><button>Help</button></li>
+      </ul>
+    </nav>
+    <img src="logo.png" alt="Logo">
+    <button class="signout">Sign Out</button>
+    
+  </header>
+  <h1 class="centered-title">Client Homepage</h1>
+  <main>
+    
+    <section class="messagebox" id="welcomeBox">
+      <button class="close" onclick="closeMessage()">×</button>
+      <img src="cute.jpg" alt="Cute Welcome Image">
+      <h2>Welcome, Client</h2>
+      <p>We’re excited to have you here! Our platform connects you with skilled freelancers ready to bring your projects to life. Explore, collaborate, and create something amazing today.</p>
+    </section>
+  </main>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('menuList');
+      menu.style.display = (menu.style.display === 'block') ? 'none' : 'block';
+    }
+
+    function closeMessage() {
+      const box = document.getElementById('welcomeBox');
+      box.style.display = 'none';
+
+     
+    }
+
+    // Optional: Hide menu when clicking outside
+    window.addEventListener('click', function(e) {
+      const menu = document.getElementById('menuList');
+      const menuButton = document.querySelector('.menu');
+      if (!menu.contains(e.target) && e.target !== menuButton) {
+        menu.style.display = 'none';
+      }
+    });
+  </script>
+</body>
+</html>
