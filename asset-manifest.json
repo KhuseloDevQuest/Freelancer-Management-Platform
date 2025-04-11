@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Freelancer-Management-Platform/static/css/main.1014ca94.css",
+    "main.js": "/Freelancer-Management-Platform/static/js/main.6464e287.js",
+    "static/js/453.9ca12d9b.chunk.js": "/Freelancer-Management-Platform/static/js/453.9ca12d9b.chunk.js",
+    "index.html": "/Freelancer-Management-Platform/index.html",
+    "main.1014ca94.css.map": "/Freelancer-Management-Platform/static/css/main.1014ca94.css.map",
+    "main.6464e287.js.map": "/Freelancer-Management-Platform/static/js/main.6464e287.js.map",
+    "453.9ca12d9b.chunk.js.map": "/Freelancer-Management-Platform/static/js/453.9ca12d9b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1014ca94.css",
+    "static/js/main.6464e287.js"
+  ]
+}
