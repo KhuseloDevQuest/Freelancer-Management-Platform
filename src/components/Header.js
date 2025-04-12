@@ -15,7 +15,9 @@ class Header extends React.Component {
   render() {
     return (
       <>
-        <header className="h1">Hustlr.</header>
+        <div style={{ display: "flex", justifyContent: "center" }}>
+  <header className="h1">Hustlr.</header>
+</div>
 
         <div id="dashboard-toggle" onClick={this.toggleSidebar}>☰</div>
 
