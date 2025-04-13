@@ -13,7 +13,7 @@ Successful signup redirects to respective dashboard.
 
 
 
-User Story 2: Sign In with Email and Password
+**User Story 2: Sign In with Email and Password
 
 As a registered user,
 I want to log in using my email and password,
@@ -32,7 +32,7 @@ User Story 3: Sign Up / Sign In Using Third-Party Identity Provider
 
 As a user,
 I want to sign up or log in using a third-party identity provider (e.g., Google),
-So that I can quickly access the platform without creating a new account.
+So that I can quickly access the platform without creating a new account and for safety.
 
 Acceptance Criteria:
 "Sign in with Google" button.
